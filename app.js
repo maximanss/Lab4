@@ -18,6 +18,10 @@ app.get("/venus", function(req,res){
     res.send("This will be Venus web page!");
 });
 
-app.listen("8080", "127.0.0.1", function() {
-    console.log("express server is running");
+//app.listen("8080", "127.0.0.1", function() {
+//    console.log("express server is running");
+// });
+
+app.listen(process.env.PORT, process.env.IP, function(){
+    console.log("Running express server...");
 });
