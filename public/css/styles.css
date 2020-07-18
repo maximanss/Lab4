@@ -2,3 +2,66 @@ body {
     background-color: #CBE2F6;
     text-align:center;
 }
+
+main {
+    display:flex;
+    justify-content: center;
+    
+}
+
+h1 {
+    color: black;
+    font-size: 2.5rem;
+    padding: 10px;
+    margin: 0px;
+}
+
+header, main, footer {
+    text-align:center;
+}
+
+
+.nav-link:hover {
+    border-bottom: 2px solid darkblue;
+    transition: .9s;    /* transition effect */
+}
+
+.nav-link.active {
+    background-color: darkblue;
+    border-bottom: 2px solid darkblue;
+}
+
+.selected-menu {
+    background-color: #195B94;
+    color: white;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+ul {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.main-content {
+    text-align:left;
+}
+
+.main-content > div {
+    padding:10px;
+    margin:15px;
+}
+
+
+.main-content img {
+    padding: 15px;
+    background-color: black;
+    border: 20px inset gray;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    color: darkblue;
+    
+}

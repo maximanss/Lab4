@@ -1,12 +1,31 @@
 <%- include('partials/header.ejs') %>
     
-    <h1> Welcome to the Solar System Site! </h1>
-    <p>Click on a planet to know more about it:</p>
+    
+    <nav class="navbar navbar-dark bg-primary justify-content-center" >
+        <a class="navbar-brand nav-link active" href="/">Home</a>
+        <a class="navbar-brand nav-link" href="/mercury">Mercury</a>
+        <a class="navbar-brand nav-link" href="/venus">Venus</a>
+        <a class="navbar-brand nav-link" href="/earth">Earth</a>
+        <a class="navbar-brand nav-link" href="/mars">Mars</a>
+    </nav>
+    <hr>        
+    <main class="main-content">
         
-        <a href="/mercury"> Mercury </a> <br>
-        <a href="/venus"> Venus </a> <br>
-        Earth <br>
-            
-            
-    <img src="/img/solar_system.png" alt="The Solar System" />
+        <div >
+            <img src="/img/solar_system.png" alt="The Solar System" class="planet" />
+        </div>
+        
+        <div>
+            <h2>Our Solar System</h2>
+            <p>Our solar system consists of our star, the Sun, and everything bound to it by gravity — the planets 
+            Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune, dwarf planets such as Pluto, 
+            dozens of moons and millions of asteroids, comets and meteoroids. Beyond our own solar system, 
+            we have discovered thousands of planetary systems orbiting other stars in the Milky Way.
+            As well there are other solar systems who might contain earth like planets.</p>
+            <h3>Why is it called "Solar" System?</h3>
+            <p>There are many planetary systems like ours in the universe, with planets orbiting a host star. 
+            Our planetary system is named the "solar" system because our Sun is named Sol, after the Latin word for Sun, 
+            "solis," and anything related to the Sun we call "solar."</p>
+        </div>
+    </main>
     <%- include('partials/footer.ejs') %>
